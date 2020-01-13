@@ -1,0 +1,32 @@
+{
+  "name": "my_project",
+  "version": "0.0.1",
+  "description": "a node web server powerd by hobber",
+  "scripts": {
+    "clear": "rm -rf ./dist",
+    "build": "run-s clear hobber-build",
+    "dev": "run-p -s hobber-dev",
+    "test": "NODE_ENV=testing node ./dist/index.js",
+    "hobber-dev": "hobber lift -e 'development'",
+    "hobber-build": "npx tsc && make -f build.makefile"
+  },
+  "license": "ISC",
+  "registry": "http://registry.npmjs.lianjia.com:7001/",
+  "dependencies": {
+    "@ke/hobber-core": "0.0.19",
+    "babel-polyfill": "^6.16.0",
+    "ini": "^1.3.5",
+    "npm-run-all": "^4.1.2",
+    "typescript": "^3.5.3"
+  },
+  "hobber-nodemon": {},
+  "devDependencies": {
+    "@types/node": "^12.7.2",
+    "@ke/hobber-cli": "^0.0.13",
+    "ts-node": "^8.3.0",
+    "babel-cli": "^6.23.0",
+    "babel-core": "^6.25.0",
+    "babel-preset-env": "^1.6.1",
+    "nodemon": "1.12.1"
+  }
+}

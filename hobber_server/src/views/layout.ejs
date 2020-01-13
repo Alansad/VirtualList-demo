@@ -1,0 +1,19 @@
+<%
+  // 全局模版，其他模版镶嵌在body中
+  // 如果你在 ctx.render('any.view', {data: {}}, { layout: null }) 设置layout: null,
+  // 可以不使用这个外部模版，也可以换成字符串，使用其他模版作为layout模版
+%>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>
+    <% if (typeof title !== undefined) { %>
+    <%= title %> -- with ♥︎ by ke-fe
+    <% } %>
+  </title>
+</head>
+<body>
+<%- body %>
+</body>
+</html>
