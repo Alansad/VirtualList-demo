@@ -27,7 +27,7 @@ class Index extends Component {
     this.renderTable = renderTable
     this.Get = Get
     let array = []
-    for(let i = 0; i < 99999; i++){
+    for(let i = 0; i < 999; i++){
       array.push(initData)
     }
     this.resource = array

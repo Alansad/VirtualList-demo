@@ -1,4 +1,4 @@
-进入code/郭键涛目录下，运行sh start.bash
+进入VirtualList-demo目录下，运行sh start.bash
 
 访问：http://localhost:3000/
 
